@@ -1,0 +1,67 @@
+#gphotos-deduper-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    z-index: 99999;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.panel-header {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #1a73e8;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.panel-stats div {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.status-idle { color: #666; font-style: italic; }
+.status-active { color: #e37400; font-weight: bold; }
+.status-danger { color: #d93025; font-weight: bold; }
+
+.panel-controls {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#gphotos-deduper-panel button {
+    padding: 8px;
+    background: #f1f3f4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+#gphotos-deduper-panel button:hover {
+    background: #e8eaed;
+}
+
+#gphotos-deduper-panel button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#gphotos-deduper-panel .btn-danger {
+    background: #fce8e6;
+    color: #c5221f;
+}
+
+#gphotos-deduper-panel .btn-danger:hover {
+    background: #fad2cf;
+}

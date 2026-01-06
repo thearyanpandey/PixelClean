@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
     <style>
-        body {width: 300px; padding: 15px; font-family: sans-serif;}
-        button {width: 100%; padding: 10px; margin: 5px 0; cursor: pointer;}
-        .status { font-size: 12px; color: #666; margin-bottom: 10px;}
-        .danger {background-color: #ffcccc; border: 1px solid #ff0000;}
-        .primary {background-color: #ccffcc; border: 1px solid #00ff00;}
-    </style>
+    body { width: 300px; padding: 15px; font-family: sans-serif; }
+    button { width: 100%; padding: 10px; margin: 5px 0; cursor: pointer; }
+    .status { font-size: 12px; color: #666; margin-bottom: 10px; text-align: center; }
+  </style>
 </head>
 <body>
-    <h3>Pixel Clean</h3>
-    <div class="status" id="statusMsg">Ready to scan....</div>
-
-    <button id="btnStart" class="primary">Start Scanning Month</button>
-    <button id="btnStop"> Stop / Pause</button>
-
-    <hr>
-
-    <button id="btnDelete" class="danger">Delete Selected</button>
-
+    <h3 style="text-align: center; margin-top: 0;">GPhotos Deduper</h3>
+  <div class="status" id="statusMsg">Use the panel inside Google Photos to control the scan.</div>
+  
+  <button id="btnReload" class="primary">Reload Extension</button>
     <script src="popup.js"></script>
 </body>
 </html>
